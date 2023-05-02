@@ -24,5 +24,10 @@ namespace CADvizorMain.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.newswire.co.kr/newsRead.php?no=962766");
+        }
     }
 }
