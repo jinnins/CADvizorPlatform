@@ -18,9 +18,9 @@ namespace CADvizorMain.Views
     /// <summary>
     /// MainWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class CADvizorMain : Window
+    public partial class CADvizorLogin : Window
     {
-        public CADvizorMain()
+        public CADvizorLogin()
         {
             InitializeComponent();
         }
