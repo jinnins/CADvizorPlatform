@@ -13,7 +13,7 @@
         ResizeMode="NoResize"
         FontFamily="Poppins">
 
-    <Border CornerRadius="8" Background="{DynamicResource PrimaryBackgroundColor}" >
+    <Border CornerRadius="8" Background="{DynamicResource PrimaryBackgroundColor}" Loaded="Border_Loaded" >
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -63,8 +63,9 @@
 
                     <StackPanel Grid.Row="3">
                         <RadioButton x:Name="rdHome" IsChecked="True" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}" Click="rdHome_Click"/>
-                        <RadioButton x:Name="rdSounds" Content="Dashboard" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource dashboard}" Margin="0 5 0 5" Click="rdSounds_Click"/>
-                        <RadioButton x:Name="rdNotes" Content="Notes" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}" Click="rdNotes_Click"/>
+                        <RadioButton x:Name="rdSounds" Content="Design" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource dashboard}" Margin="0 5 0 5" Click="rdSounds_Click"/>
+                        <RadioButton x:Name="rdNotes" Content="Library" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}" Click="rdNotes_Click"/>
+                        <RadioButton x:Name="rdViewer" Content="Viewer" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource eye}" Margin="0 5 0 5" Click ="RdViewer_Click"/>
                         <RadioButton x:Name="rdPayment" Content="Settings" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource settings}" Margin="0 5 0 5" Click="rdPayment_Click"/>
                     </StackPanel>
 

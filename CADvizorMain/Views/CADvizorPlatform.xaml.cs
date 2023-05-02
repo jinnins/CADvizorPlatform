@@ -28,6 +28,7 @@ namespace CADvizorMain.Views
         {
             this.DragMove();
             e.Handled = true;
+
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -57,17 +58,26 @@ namespace CADvizorMain.Views
 
         private void rdSounds_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Views/Pages/Dashboard.xaml", UriKind.RelativeOrAbsolute));
+            PagesNavigation.Navigate(new System.Uri("Views/Pages/Design.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void rdNotes_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Views/Pages/NotePage.xaml", UriKind.RelativeOrAbsolute));
+            PagesNavigation.Navigate(new System.Uri("Views/Pages/Library.xaml", UriKind.RelativeOrAbsolute));
         }
 
+        private void RdViewer_Click(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("Views/Pages/Viewer.xaml", UriKind.RelativeOrAbsolute));
+        }
         private void rdPayment_Click(object sender, RoutedEventArgs e)
         {
             PagesNavigation.Navigate(new System.Uri("Views/Pages/Setting.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void Border_Loaded(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("Views/Pages/HomePage.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

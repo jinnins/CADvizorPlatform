@@ -59,14 +59,17 @@
     <Compile Include="Views\CADvizorPlatform.xaml.cs">
       <DependentUpon>CADvizorPlatform.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\Dashboard.xaml.cs">
-      <DependentUpon>Dashboard.xaml</DependentUpon>
+    <Compile Include="Views\Pages\Design.xaml.cs">
+      <DependentUpon>Design.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Viewer.xaml.cs">
+      <DependentUpon>Viewer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\NotePage.xaml.cs">
-      <DependentUpon>NotePage.xaml</DependentUpon>
+    <Compile Include="Views\Pages\Library.xaml.cs">
+      <DependentUpon>Library.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\Setting.xaml.cs">
       <DependentUpon>Setting.xaml</DependentUpon>
@@ -99,7 +102,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\Dashboard.xaml">
+    <Page Include="Views\Pages\Design.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Viewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,7 +114,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\NotePage.xaml">
+    <Page Include="Views\Pages\Library.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
