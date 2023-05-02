@@ -152,5 +152,14 @@
   <ItemGroup>
     <Resource Include="Assets\Avatars\avatar-2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cadvizormain.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
