@@ -6,10 +6,17 @@
       xmlns:local="clr-namespace:CADvizorMain.Views.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HomePage">
-
-
+      Title="HomePage"
+      >
+    
+    
+    
     <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="/Images/CADvizorMFG.png"
+                        AlignmentY="Center" AlignmentX="Center" Opacity="0.2"/>
+        </Grid.Background>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="190"/>
@@ -21,8 +28,8 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
-            <RowDefinition Height="240"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -33,38 +40,42 @@
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.75,0"
-                                     EndPoint="0,1">
-                    <GradientStop Color="#ff3d31"
-                              Offset="0.1"/>
-                    <GradientStop Color="#ffffff"
-                              Offset="0.8"/>
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                    <GradientStop Color="#ff3d31"/>
                 </LinearGradientBrush>
+                
             </Border.Background>
 
-            <Grid>
+
+            <Grid>                
+                <Border CornerRadius="20,20,20,20"
+                        Margin="5,5,5,5"
+                        x:Name="news1">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/news11.png"/>
+                    </Border.Background>
+                </Border>
 
                 <Border Background="#FFFFFF"
-                        Height="110"
-                        Width="140"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
+                        Height="80"
+                        Width="160"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
                         CornerRadius="20"
-                        Opacity="0.3"
-                        Margin="5,5,0,0"/>
+                        Opacity="0.8"
+                        Margin="0,0,0,5">
 
-                <TextBlock Text="YURA, &#x0a;CADvizor로 &#x0a;TYM 설계 &#x0a;효율성 개선"
-                           Foreground="#FFFFFF"
+                </Border>
+
+                <TextBlock Text="CADvizor, &#x0a;TYM 설계 &#x0a;효율성 개선"
+                           Foreground="Black"
                            FontFamily="Oswald"
-                           FontSize="17"
-                           VerticalAlignment="Top"
+                           FontSize="15"
+                           VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
-                           Margin="15,10,0,0"/>
+                           Margin="20,10,0,20"/>
 
-                <Button VerticalAlignment="Bottom"
-                        HorizontalAlignment="Right"
-                        Click="Button_Click"
-                        Tag="{DynamicResource settings}"
-                        />
             </Grid>
 
         </Border>
@@ -76,32 +87,39 @@
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.75,0"
-                                     EndPoint="0,1">
-                    <GradientStop Color="#ff3d31"
-                              Offset="0.1"/>
-                    <GradientStop Color="#ffffff"
-                              Offset="0.8"/>
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                    <GradientStop Color="#ff3d31"/>
                 </LinearGradientBrush>
             </Border.Background>
 
             <Grid>
 
-                <Border Background="#FFFFFF"
-                        Height="110"
-                        Width="140"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        CornerRadius="20"
-                        Opacity="0.3"
-                        Margin="5,5,0,0"/>
+                <Border CornerRadius="20,20,20,20"
+                        Margin="5,5,5,5"
+                        x:Name="news2">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/news2.png"/>
+                    </Border.Background>
+                </Border>
 
-                <TextBlock Text="설계 요구사항 &#x0a;자동화 솔루션 &#x0a;CADvizor Request &#x0a;출시"
-                           Foreground="#FFFFFF"
+                <Border Background="#FFFFFF"
+                        Height="80"
+                        Width="160"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        CornerRadius="20"
+                        Opacity="0.8"
+                        Margin="0,0,0,5"/>
+
+                <TextBlock Text="설계 요구사항 &#x0a;자동화 솔루션 &#x0a;CADvizor Request"
+                           Foreground="Black"
                            FontFamily="Oswald"
-                           FontSize="16"
-                           VerticalAlignment="Top"
+                           FontSize="15"
+                           VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
-                           Margin="15,10,0,0"/>
+                           Margin="20,10,0,20"/>
+
             </Grid>
 
         </Border>
@@ -113,32 +131,39 @@
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.75,0"
-                                     EndPoint="0,1">
-                    <GradientStop Color="#ff3d31"
-                              Offset="0.1"/>
-                    <GradientStop Color="#ffffff"
-                              Offset="0.8"/>
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                    <GradientStop Color="#ff3d31"/>
                 </LinearGradientBrush>
             </Border.Background>
 
             <Grid>
-
+                
+                <Border CornerRadius="20,20,20,20"
+                        Margin="5,5,5,5"
+                        x:Name="news3">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/news3.png"/>
+                    </Border.Background>
+                </Border>
+                
                 <Border Background="#FFFFFF"
-                        Height="110"
-                        Width="140"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
+                        Height="80"
+                        Width="160"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
                         CornerRadius="20"
-                        Opacity="0.3"
-                        Margin="5,5,0,0"/>
+                        Opacity="0.8"
+                        Margin="0,0,0,5"/>
 
-                <TextBlock Text="국제종합기계, &#x0a;CADvizor 도입 &#x0a;TYM 업무효율성 &#x0a;20% 상승"
-                           Foreground="#FFFFFF"
+                <TextBlock Text="국제종합기계, &#x0a;CADvizor 도입으로 &#x0a;업무효율성 20% 상승"
+                           Foreground="Black"
                            FontFamily="Oswald"
-                           FontSize="16"
-                           VerticalAlignment="Top"
+                           FontSize="15"
+                           VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
-                           Margin="15,10,0,0"/>
+                           Margin="17,10,0,20"/>
+
             </Grid>
 
         </Border>
@@ -150,32 +175,40 @@
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.75,0"
-                                     EndPoint="0,1">
-                    <GradientStop Color="#ff3d31"
-                              Offset="0.1"/>
-                    <GradientStop Color="#ffffff"
-                              Offset="0.8"/>
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                    <GradientStop Color="#ff3d31"/>
                 </LinearGradientBrush>
             </Border.Background>
 
             <Grid>
+                <Border CornerRadius="20,20,20,20"
+                        Margin="5,5,5,5"
+                        x:Name="news4">                    
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/news4.png"/>
+                    </Border.Background>
+                </Border>
 
                 <Border Background="#FFFFFF"
-                        Height="110"
-                        Width="140"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
+                        Height="80"
+                        Width="160"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
                         CornerRadius="20"
-                        Opacity="0.3"
-                        Margin="5,5,0,0"/>
+                        Opacity="0.8"
+                        Margin="0,0,0,5">
+                </Border>
 
-                <TextBlock Text="YURA Releases &#x0a;New Work &#x0a;Instructions S/W&#x0a;CADvizor WORK"
-                           Foreground="#FFFFFF"
+                <TextBlock Text="New Work &#x0a;Instructions S/W&#x0a;CADvizor WORK"
+                           Foreground="Black"
                            FontFamily="Oswald"
-                           FontSize="16"
-                           VerticalAlignment="Top"
+                           FontSize="15"
+                           VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
-                           Margin="15,10,0,0"/>
+                           Margin="20,10,0,20"/>
+                
+                
             </Grid>
 
         </Border>
@@ -190,41 +223,5 @@
                    Margin="10,10,0,0"
                    FontWeight="Bold"/>
 
-        <Border Grid.Row="3"
-                Grid.ColumnSpan="6"
-                CornerRadius="0,0,20,20">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0.75,0"
-                                     EndPoint="0,1">
-
-                    <GradientStop Color="#ff3d31"
-                                  Offset="0.1"/>
-                    <GradientStop Color="#DFCF20"
-                                  Offset="0.8"/>
-                </LinearGradientBrush>
-            </Border.Background>
-
-        </Border>
-
-        <Grid Grid.Row="2"
-              Grid.Column="1"
-              Grid.ColumnSpan="4">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="500"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Border Grid.Column="1"
-                    Background="WhiteSmoke"
-                    CornerRadius="10,10,0,0"
-                    Margin="0,55,0,0">
-                
-                
-            </Border>
-            
-        </Grid>
-        
     </Grid>
 </Page>

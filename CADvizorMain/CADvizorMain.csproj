@@ -168,5 +168,17 @@
   <ItemGroup>
     <Resource Include="Images\user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CADVizorMFG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\news1.PNG" />
+    <Resource Include="Images\news2.PNG" />
+    <Resource Include="Images\news3.PNG" />
+    <Resource Include="Images\news4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\news11.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
