@@ -29,7 +29,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
             <RowDefinition Height="300"/>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -68,13 +68,13 @@
 
                 </Border>
 
-                <TextBlock Text="CADvizor, &#x0a;TYM 설계 &#x0a;효율성 개선"
+                <TextBlock Text="CADvizor, TYM 설계 &#x0a;효율성 개선"
                            Foreground="Black"
-                           FontFamily="Oswald"
-                           FontSize="15"
+                           FontFamily="Arial"
+                           FontSize="14"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
-                           Margin="20,10,0,20"/>
+                           Margin="20,10,0,35"/>
 
             </Grid>
 
@@ -114,8 +114,8 @@
 
                 <TextBlock Text="설계 요구사항 &#x0a;자동화 솔루션 &#x0a;CADvizor Request"
                            Foreground="Black"
-                           FontFamily="Oswald"
-                           FontSize="15"
+                           FontFamily="Arial"
+                           FontSize="14"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
                            Margin="20,10,0,20"/>
@@ -158,8 +158,8 @@
 
                 <TextBlock Text="국제종합기계, &#x0a;CADvizor 도입으로 &#x0a;업무효율성 20% 상승"
                            Foreground="Black"
-                           FontFamily="Oswald"
-                           FontSize="15"
+                           FontFamily="Arial"
+                           FontSize="14"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
                            Margin="17,10,0,20"/>
@@ -202,8 +202,8 @@
 
                 <TextBlock Text="New Work &#x0a;Instructions S/W&#x0a;CADvizor WORK"
                            Foreground="Black"
-                           FontFamily="Oswald"
-                           FontSize="15"
+                           FontFamily="Arial"
+                           FontSize="14"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
                            Margin="20,10,0,20"/>
@@ -222,6 +222,86 @@
                    FontSize="28"
                    Margin="10,10,0,0"
                    FontWeight="Bold"/>
+
+        <Grid Grid.Column="2"
+              Grid.Row="3">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="1"
+                    CornerRadius="10"
+                    Margin="10"
+                    Height="60"
+                    Width="60">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ff3d31"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            
+            <Border Grid.Column="2"
+                    CornerRadius="10"
+                    Margin="10"
+                    Height="60"
+                    Width="60">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ff3d31"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Column="3"
+              Grid.Row="3">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0"
+                    CornerRadius="10"
+                    Margin="10"
+                    Height="60"
+                    Width="60">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ff3d31"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <Border Grid.Column="1"
+                    CornerRadius="10"
+                    Margin="10"
+                    Height="60"
+                    Width="60">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ff3d31"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+        </Grid>
 
     </Grid>
 </Page>
