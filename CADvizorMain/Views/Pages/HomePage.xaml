@@ -29,6 +29,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
             <RowDefinition Height="350"/>
+            <RowDefinition Height="50" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -235,7 +236,8 @@
                     CornerRadius="10"
                     Margin="10"
                     Height="90"
-                    Width="90">
+                    Width="90"
+                    VerticalAlignment ="Top">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0.75,0"
@@ -245,18 +247,51 @@
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
-            
+
+            <Border Grid.Column="1"
+                    CornerRadius="10"
+                    Margin="20"
+                    Height="70"
+                    Width="70"
+                    VerticalAlignment ="Top">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ffffff"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
             <Border Grid.Column="2"
                     CornerRadius="10"
                     Margin="10"
                     Height="90"
-                    Width="90">
+                    Width="90"
+                    VerticalAlignment ="Top">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0.75,0"
                                      EndPoint="0,1"
                                      Opacity="0.7">
                         <GradientStop Color="#ff3d31"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <Border Grid.Column="2"
+                    CornerRadius="10"
+                    Margin="20"
+                    Height="70"
+                    Width="70"
+                    VerticalAlignment ="Top">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ffffff"/>
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
@@ -275,7 +310,8 @@
                     CornerRadius="10"
                     Margin="10"
                     Height="90"
-                    Width="90">
+                    Width="90"
+                    VerticalAlignment ="Top">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0.75,0"
@@ -285,18 +321,50 @@
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
+            <Border Grid.Column="0"
+                    CornerRadius="10"
+                    Margin="20"
+                    Height="70"
+                    Width="70"
+                    VerticalAlignment ="Top">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ffffff"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
 
             <Border Grid.Column="1"
                     CornerRadius="10"
                     Margin="10"
                     Height="90"
-                    Width="90">
+                    Width="90"
+                    VerticalAlignment ="Top">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0.75,0"
                                      EndPoint="0,1"
                                      Opacity="0.7">
                         <GradientStop Color="#ff3d31"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            
+            <Border Grid.Column="1"
+                    CornerRadius="10"
+                    Margin="20"
+                    Height="70"
+                    Width="70"
+                    VerticalAlignment ="Top">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0"
+                                     EndPoint="0,1"
+                                     Opacity="0.7">
+                        <GradientStop Color="#ffffff"/>
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
