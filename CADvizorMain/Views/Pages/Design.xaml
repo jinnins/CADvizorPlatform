@@ -5,11 +5,344 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CADvizorMain.Views.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="660" d:DesignWidth="1100"
       Title="Design">
 
-    <Border Background="{DynamicResource SecundaryBackgroundColor}"
-            Height="46" HorizontalAlignment="Stretch" VerticalAlignment="Top" CornerRadius="0 0 50 50">
-        <Image Source="/Images/cadvizormain.png"/>
-    </Border> 
+    <Border CornerRadius="50">
+        <Border>
+
+            <StackPanel Orientation="Vertical" Grid.Column="12" Grid.Row="12">
+
+                <Label>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/favicon.png" Height="50" Width="50" />
+                        <TextBlock Text="Make It Simple" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"
+                           Foreground="OrangeRed" FontWeight="Bold" FontFamily="Montserrat" TextWrapping="Wrap" TextAlignment="Center"/>
+                    </StackPanel>
+                </Label>
+
+                <Label Content="Cloud-based CAD that minimizes error and increases speed and productivity" Foreground="Gray" FontSize="15"
+               FontWeight="Medium" FontFamily="Montserrat" Margin="0, -10, 0, 0"/>
+
+                <Border CornerRadius="20" Width="1090" Height="210" BorderBrush="#000000" BorderThickness="1 1 1 1" >
+                    <Border CornerRadius="15" BorderThickness="1.5" >
+
+                        <StackPanel Orientation="Vertical" >
+                            <Label Content="CADvizor란?" FontFamily="Montserrat" FontSize="28" FontStyle="Normal" Margin="0, 10, 0, 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Margin="10, -5, 0, 0" Content="CADvizor" Foreground="Red" FontFamily="Montserrat" FontSize="15"/>
+                                <Label Margin="0, -5, 0, 0" Content="는 Cloud CAD엔진을 이용한 플랫폼으로써 Advanced Logic Analysis 기반 특허 기술을 통해 &#10;불량률을 최소화 하고 설계 속도는 높여주는 사용주 중심의 최적화 솔루션입니다." FontSize="15"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Know more" FontFamily="Montserrat" FontSize="10" Margin="20, 70, 0, 0" Width="70" Height="30" Background="OrangeRed" BorderThickness="0">
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="5"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+
+                                <Button Content="Start" FontWeight="Bold" FontFamily="Montserrat" FontSize="15" Margin="5, 70, 0, 0" Width="170" Height="30" Background="White">
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="5"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+
+                                <StackPanel Orientation="Vertical" Margin="40, 0, 0, 0">
+                                    <Image Source="/Images/CADVizor_1024.png" Height="152" Margin="500,-80,0,0" />
+                                </StackPanel>
+
+                            </StackPanel>
+
+                           
+                            
+                        </StackPanel>
+                    </Border>
+                </Border>
+
+                <Grid>                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="290"/>
+                        <RowDefinition Height="70"/>                        
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="1"
+                        Grid.Column="1"
+                        CornerRadius="20"
+                        Margin="10">
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>                                
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="265"/>                                
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="LOGIC" Margin="1,1,1,1" Background="Yellow" CornerRadius="25">
+                                
+                                <TextBlock Text="Logic" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,20,0,0"/>
+                                
+                            </Border>
+
+                            <TextBlock Text="Window" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,40,0,0"/>
+
+
+                                <Button x:Name="btnLogic"                            
+                                BorderThickness="0"                            
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Column="1"
+                                Margin="0,80,0,0"
+                                Background="Transparent"
+                                Click="BtnLogic_Click">
+
+                                    <Image Source="/Images/closed.png" Height="120" Width="140" />
+
+                                </Button>                            
+                        </Grid>                        
+                    </Border>
+
+
+                    <Border Grid.Row="2"
+                        Grid.Column="1"
+                        CornerRadius="20"
+                        Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="logic_under" BorderThickness="1 1 1 1" Background="White" CornerRadius="25" BorderBrush="#000000">
+                                <TextBlock Text="CADvizor Logic" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                             Foreground="Black" FontFamily="Montserrat" Margin="0,15,0,0"/>
+                                </Border>
+                        </Grid>
+                    </Border>
+
+
+
+
+                    <Border Grid.Row="1"
+                        Grid.Column="2"
+                        CornerRadius="20"
+                        Margin="10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="265"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="MFG" Margin="1,1,1,1" Background="Yellow" CornerRadius="25">
+
+                                <TextBlock Text="MFG" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,20,0,0"/>
+
+                            </Border>
+
+                            <TextBlock Text="Window" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,40,0,0"/>
+
+
+                            <Button x:Name="btnmfg"                            
+                                BorderThickness="0"                            
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Column="1"
+                                Margin="0,80,0,0"
+                                Background="Transparent"
+                                Click="Btnmfg_Click">
+
+                                <Image Source="/Images/closed.png" Height="120" Width="140" />
+
+                            </Button>
+                        </Grid>
+
+                    </Border>
+
+                    <Border Grid.Row="2"
+                        Grid.Column="2"
+                        CornerRadius="20"
+                        Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="mfg_under" BorderBrush="#000000" BorderThickness="1 1 1 1" CornerRadius="25">
+
+                                <TextBlock Text="CADvizor MFG" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                             Foreground="Black" FontFamily="Montserrat" Margin="0,15,0,0"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="1"
+                        Grid.Column="3"
+                        CornerRadius="20"
+                        Margin="10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="265"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="WORK" Margin="1,1,1,1" Background="Yellow" CornerRadius="25">
+
+                                <TextBlock Text="Work" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,20,0,0"/>
+
+                            </Border>
+
+                            <TextBlock Text="Window" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,40,0,0"/>
+
+
+                            <Button x:Name="btnwork"                            
+                                BorderThickness="0"                            
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Column="1"
+                                Margin="0,80,0,0"
+                                Background="Transparent"
+                                Click="Btnmfg_Click">
+
+                                <Image Source="/Images/closed.png" Height="120" Width="140" />
+
+                            </Button>
+                        </Grid>
+
+                    </Border>
+
+                    <Border Grid.Row="2"
+                        Grid.Column="3"
+                        CornerRadius="20"
+                        Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="work_under" BorderBrush="#000000" BorderThickness="1 1 1 1" CornerRadius="25">
+
+                                <TextBlock Text="CADvizor Work" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                             Foreground="Black" FontFamily="Montserrat" Margin="0,15,0,0"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="1"
+                        Grid.Column="4"
+                        CornerRadius="20"
+                        Margin="10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="265"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="DATA" Margin="1,1,1,1" Background="Yellow" CornerRadius="25">
+
+                                <TextBlock Text="Data Potal" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,20,0,0"/>
+
+                            </Border>
+
+                            <TextBlock Text="Window" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"
+                                         Foreground="Gray" FontFamily="Montserrat" Margin="0,40,0,0"/>
+
+
+                            <Button x:Name="btndata"                            
+                                BorderThickness="0"                            
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Column="1"
+                                Margin="0,80,0,0"
+                                Background="Transparent"
+                                Click="Btnmfg_Click">
+
+                                <Image Source="/Images/closed.png" Height="120" Width="140" />
+
+                            </Button>
+                        </Grid>
+                        
+                        
+                    </Border>
+
+                    <Border Grid.Row="2"
+                        Grid.Column="4"
+                        CornerRadius="20"
+                        Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="237"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+
+                            <Border x:Name="Data_under" BorderBrush="#000000" BorderThickness="1 1 1 1" CornerRadius="25">
+
+                                <TextBlock Text="Data Potal" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
+                                             Foreground="Black" FontFamily="Montserrat" Margin="0,15,0,0"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                </Grid>
+
+
+
+
+            </StackPanel>
+
+        </Border>
+        
+        
+        
+    </Border>
+    
+    
+
+
+
 </Page>
