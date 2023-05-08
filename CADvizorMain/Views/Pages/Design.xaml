@@ -57,13 +57,13 @@
 
                             </StackPanel>
 
-                           
-                            
+
+
                         </StackPanel>
                     </Border>
                 </Border>
 
-                <Grid>                    
+                <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="260"/>
@@ -76,7 +76,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="10" />
                         <RowDefinition Height="290"/>
-                        <RowDefinition Height="70"/>                        
+                        <RowDefinition Height="70"/>
                         <RowDefinition Height="10"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
@@ -85,27 +85,27 @@
                         Grid.Column="1"
                         CornerRadius="20"
                         Margin="10">
-                        
+
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="237"/>                                
+                                <ColumnDefinition Width="237"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="265"/>                                
+                                <RowDefinition Height="265"/>
                             </Grid.RowDefinitions>
 
                             <Border x:Name="LOGIC" Margin="1,1,1,1" Background="Yellow" CornerRadius="25">
-                                
+
                                 <TextBlock Text="Logic" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
                                          Foreground="Gray" FontFamily="Montserrat" Margin="0,20,0,0"/>
-                                
+
                             </Border>
 
                             <TextBlock Text="Window" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"
                                          Foreground="Gray" FontFamily="Montserrat" Margin="0,40,0,0"/>
 
 
-                                <Button x:Name="btnLogic"                            
+                            <Button x:Name="btnLogic"                            
                                 BorderThickness="0"                            
                                 FontSize="12"
                                 FontFamily="Montserrat"
@@ -115,10 +115,10 @@
                                 Background="Transparent"
                                 Click="BtnLogic_Click">
 
-                                    <Image Source="/Images/closed.png" Height="120" Width="140" />
+                                <Image Source="/Images/closed.png" Height="120" Width="140" />
 
-                                </Button>                            
-                        </Grid>                        
+                            </Button>
+                        </Grid>
                     </Border>
 
 
@@ -137,7 +137,7 @@
                             <Border x:Name="logic_under" BorderThickness="1 1 1 1" Background="White" CornerRadius="25" BorderBrush="#000000">
                                 <TextBlock Text="CADvizor Logic" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
                                              Foreground="Black" FontFamily="Montserrat" Margin="0,15,0,0"/>
-                                </Border>
+                            </Border>
                         </Grid>
                     </Border>
 
@@ -199,8 +199,8 @@
 
                             <Border x:Name="mfg_under" BorderBrush="#000000" BorderThickness="1 1 1 1" CornerRadius="25">
 
-                                <TextBlock Text="CADvizor MFG" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"
-                                             Foreground="Black" FontFamily="Montserrat" Margin="0,15,0,0"/>
+                                <TextBlock Text="CADvizor MFG" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"
+                                             Foreground="Black" FontFamily="Montserrat" Margin="54,15,0,0"/>
                             </Border>
                         </Grid>
                     </Border>
@@ -304,8 +304,8 @@
 
                             </Button>
                         </Grid>
-                        
-                        
+
+
                     </Border>
 
                     <Border Grid.Row="2"
@@ -336,12 +336,12 @@
             </StackPanel>
 
         </Border>
-        
-        
-        
+
+
+
     </Border>
-    
-    
+
+
 
 
 
