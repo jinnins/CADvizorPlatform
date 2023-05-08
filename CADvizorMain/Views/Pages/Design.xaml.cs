@@ -24,5 +24,15 @@ namespace CADvizorMain.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnLogic_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Btnmfg_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
